@@ -1,3 +1,5 @@
+import KitSelector from "../components/KitSelector";
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-8">
@@ -9,6 +11,8 @@ export default function Home() {
         Helping indoor climbers transition confidently to outdoor sport and trad
         climbing in the UK.
       </p>
+
+      <KitSelector />
     </main>
   );
 }
