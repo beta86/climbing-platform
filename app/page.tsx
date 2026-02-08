@@ -11,8 +11,6 @@ export default function Home() {
         Helping indoor climbers transition confidently to outdoor sport and trad
         climbing in the UK.
       </p>
-
-      <KitSelector />
     </main>
   );
 }
