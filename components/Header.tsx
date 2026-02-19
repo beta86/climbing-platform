@@ -21,9 +21,9 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-stone-300">
-            <Link href="/learn" className="hover:text-orange-400 transition">
+            {/* <Link href="/learn" className="hover:text-orange-400 transition">
               Learn
-            </Link>
+            </Link> */}
             <Link href="/gear" className="hover:text-orange-400 transition">
               Gear
             </Link>

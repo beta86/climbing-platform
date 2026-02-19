@@ -1,4 +1,4 @@
-import Link from "next/link";
+import LinkCard from "@/components/LinkCard";
 import { disciplineLabel, gearPageOrder, kits } from "@/data/kits";
 
 const disciplines = gearPageOrder.filter(
@@ -16,15 +16,13 @@ export default function GearPage() {
         </p>
       </header>
 
-      <ul className="flex flex-col gap-3">
+      <ul className="flex flex-col gap-4">
         {disciplines.map((type) => (
           <li key={type}>
-            <Link
+            <LinkCard
               href={`/gear/${type}`}
-              className="block p-4 rounded-lg border border-stone-700 bg-stone-800/80 shadow-sm hover:shadow hover:border-stone-600 transition-all text-stone-100 font-medium"
-            >
-              {disciplineLabel[type]} beginner kit
-            </Link>
+              title={`${disciplineLabel[type]} beginner kit`}
+            />
           </li>
         ))}
       </ul>
