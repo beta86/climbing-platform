@@ -19,7 +19,7 @@ export default function Home() {
         {/* Hero Content: mobile = content at bottom; desktop = true vertical centre */}
         <div className="absolute inset-0 flex flex-col items-center px-4">
           <div className="flex-1 min-h-0" aria-hidden />
-          <div className="flex flex-col items-center text-center pb-12 pt-0 md:pt-16 md:pb-0">
+          <div className="flex flex-col items-center text-center pb-8 pt-0 md:pt-16 md:pb-0">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-300 mb-6 leading-tight">
               Build Your Climbing From the Ground Up
             </h1>
