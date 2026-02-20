@@ -1,3 +1,5 @@
+import BackLink from "@/components/BackLink";
+
 export default function GuidesIndoorPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
@@ -6,6 +8,7 @@ export default function GuidesIndoorPage() {
         Content coming soon. Movement skills, belay systems, and confidence
         building.
       </p>
+      <BackLink />
     </div>
   );
 }

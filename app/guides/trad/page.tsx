@@ -1,3 +1,5 @@
+import BackLink from "@/components/BackLink";
+
 export default function GuidesTradPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
@@ -6,6 +8,7 @@ export default function GuidesTradPage() {
         Content coming soon. Gear placement, systems thinking, and judgement
         under pressure.
       </p>
+      <BackLink />
     </div>
   );
 }

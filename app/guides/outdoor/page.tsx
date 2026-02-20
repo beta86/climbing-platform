@@ -1,3 +1,5 @@
+import BackLink from "@/components/BackLink";
+
 export default function GuidesOutdoorPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
@@ -6,6 +8,7 @@ export default function GuidesOutdoorPage() {
         Content coming soon. Anchors, safety systems, route reading, and
         decision making.
       </p>
+      <BackLink />
     </div>
   );
 }

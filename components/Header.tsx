@@ -59,9 +59,9 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden border-t border-stone-700 bg-stone-900">
           <div className="px-4 py-4 flex flex-col gap-4 text-stone-200 font-medium">
-            <Link href="/learn" onClick={() => setIsOpen(false)}>
+            {/* <Link href="/learn" onClick={() => setIsOpen(false)}>
               Learn
-            </Link>
+            </Link> */}
             <Link href="/gear" onClick={() => setIsOpen(false)}>
               Gear
             </Link>
