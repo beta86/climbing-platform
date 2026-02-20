@@ -30,6 +30,9 @@ export default function Header() {
             <Link href="/guides" className="hover:text-orange-400 transition">
               Guides
             </Link>
+            <Link href="/about" className="hover:text-orange-400 transition">
+              About
+            </Link>
             <Link href="/contact" className="hover:text-orange-400 transition">
               Contact
             </Link>
@@ -67,6 +70,9 @@ export default function Header() {
             </Link>
             <Link href="/guides" onClick={() => setIsOpen(false)}>
               Guides
+            </Link>
+            <Link href="/about" onClick={() => setIsOpen(false)}>
+              About
             </Link>
             <Link href="/contact" onClick={() => setIsOpen(false)}>
               Contact
