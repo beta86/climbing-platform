@@ -4,16 +4,24 @@ import { TrendingUp } from "lucide-react";
 export default function GuidesPage() {
   return (
     <div className="min-h-screen bg-stone-100">
-      {/* Section 1: Title band */}
-      <section className="bg-stone-100 py-12 sm:py-16">
-        <div className="max-w-3xl mx-auto px-5 sm:px-6">
-          <h1 className="text-4xl font-bold text-stone-900">
-            Build Your Skills
-          </h1>
-          <div
-            className="mt-2 h-1 w-16 rounded-full bg-orange-500"
-            aria-hidden
-          />
+      {/* Hero: image with title overlaid */}
+      <section className="relative h-[40vh] min-h-[280px] max-h-[420px] w-full overflow-hidden">
+        <img
+          src="/images/guides-hero-2.jpg"
+          alt="Climbing skills and progression"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-stone-900/40" aria-hidden />
+        <div className="absolute left-0 right-0 top-0 flex flex-col items-start pt-12 sm:pt-16">
+          <div className="max-w-3xl w-full mx-auto px-5 sm:px-6">
+            <h1 className="text-4xl font-bold text-stone-200 drop-shadow-sm">
+              Build Your Skills
+            </h1>
+            <div
+              className="mt-2 h-1 w-16 rounded-full bg-orange-500"
+              aria-hidden
+            />
+          </div>
         </div>
       </section>
 
@@ -37,10 +45,6 @@ export default function GuidesPage() {
                 designed to help you progress deliberately and safely.
               </p>
             </div>
-            <p className="mt-6 flex items-center gap-2 text-orange-600 text-sm font-medium">
-              <TrendingUp className="shrink-0" size={18} aria-hidden />
-              Built for safe, step-by-step progression
-            </p>
           </div>
         </div>
       </section>
