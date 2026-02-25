@@ -1,14 +1,17 @@
 import BackLink from "@/components/BackLink";
+import PageLayout from "@/components/PageLayout";
+import PageSection from "@/components/PageSection";
 
 export default function GuidesIndoorPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-stone-100">Indoor foundations</h1>
-      <p className="mt-4 text-stone-400">
-        Content coming soon. Movement skills, belay systems, and confidence
-        building.
-      </p>
-      <BackLink />
-    </div>
+    <PageLayout title="Indoor foundations">
+      <PageSection bg="white">
+        <p className="text-stone-700 leading-relaxed">
+          Content coming soon. Movement skills, belay systems, and confidence
+          building.
+        </p>
+        <BackLink />
+      </PageSection>
+    </PageLayout>
   );
 }

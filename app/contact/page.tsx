@@ -1,10 +1,14 @@
+import PageLayout from "@/components/PageLayout";
+import PageSection from "@/components/PageSection";
+
 export default function ContactPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-stone-100">Contact</h1>
-      <p className="mt-4 text-stone-400">
-        Content coming soon.
-      </p>
-    </div>
+    <PageLayout title="Contact">
+      <PageSection bg="white">
+        <p className="text-stone-700 leading-relaxed">
+          Content coming soon.
+        </p>
+      </PageSection>
+    </PageLayout>
   );
 }

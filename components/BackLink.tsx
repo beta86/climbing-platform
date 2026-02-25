@@ -16,7 +16,7 @@ export default function BackLink({ className, children }: Props) {
     <button
       type="button"
       onClick={() => router.back()}
-      className={className ?? "inline-block text-base text-stone-400 hover:text-stone-200 mt-6"}
+      className={className ?? "inline-block text-base text-stone-600 hover:text-stone-900 mt-6"}
     >
       <FontAwesomeIcon
         icon={faMountain}

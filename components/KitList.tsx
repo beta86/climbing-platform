@@ -15,7 +15,7 @@ export default function KitList({ type, showHeading = true }: Props) {
   return (
     <section className="space-y-4">
       {showHeading && (
-        <h2 className="text-xl font-semibold text-stone-200 border-b border-stone-700 pb-2">
+        <h2 className="text-xl font-semibold text-stone-900 border-b border-stone-200 pb-2">
           {title}
         </h2>
       )}
@@ -23,16 +23,16 @@ export default function KitList({ type, showHeading = true }: Props) {
         {items.map((item, index) => (
           <li
             key={index}
-            className="p-4 rounded-lg border border-stone-700 bg-stone-800/80 shadow-sm hover:shadow transition-shadow"
+            className="p-4 rounded-lg border border-stone-200 bg-white shadow-sm hover:shadow transition-shadow"
           >
-            <h3 className="font-semibold text-stone-100">{item.name}</h3>
-            <p className="text-stone-400 text-sm mt-1">{item.note}</p>
+            <h3 className="font-semibold text-stone-900">{item.name}</h3>
+            <p className="text-stone-600 text-sm mt-1">{item.note}</p>
             <p className="text-stone-500 text-sm mt-1">{item.estPrice}</p>
             <a
               href={item.affiliate}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-2 text-orange-400 font-medium text-sm hover:underline"
+              className="inline-block mt-2 text-orange-600 font-medium text-sm hover:underline"
             >
               Buy here
             </a>

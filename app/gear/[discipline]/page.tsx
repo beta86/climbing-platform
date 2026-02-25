@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import BackLink from "@/components/BackLink";
 import KitList from "@/components/KitList";
+import PageLayout from "@/components/PageLayout";
+import PageSection from "@/components/PageSection";
 import { disciplineLabel, kits } from "@/data/kits";
 
 type Discipline = keyof typeof kits;
@@ -23,13 +25,11 @@ export default async function GearDisciplinePage({ params }: Props) {
   const title = `${disciplineLabel[discipline]} beginner kit`;
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-10">
-      
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold text-stone-100">{title}</h1>
-      </header>
-      <KitList type={discipline} showHeading={false} />
-      <BackLink />
-    </div>
+    <PageLayout title={title}>
+      <PageSection bg="white">
+        <KitList type={discipline} showHeading={false} />
+        <BackLink />
+      </PageSection>
+    </PageLayout>
   );
 }
