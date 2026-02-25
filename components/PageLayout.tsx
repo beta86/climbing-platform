@@ -19,7 +19,6 @@ export default function PageLayout({
             alt={heroImage.alt}
             className="absolute inset-0 h-full w-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-stone-900/40" aria-hidden />
           <div className="absolute left-0 right-0 top-0 flex flex-col items-start pt-12 sm:pt-16">
             <div className="max-w-3xl w-full mx-auto px-5 sm:px-6">
               <h1 className="text-4xl font-bold text-stone-100 drop-shadow-sm">
