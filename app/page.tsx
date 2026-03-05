@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-stone-950/25 hidden md:block" aria-hidden />
 
-        {/* Hero Content: button at bottom of image */}
+        {/* Hero Content: button at bottom of image */} 
         <div className="absolute inset-0 flex flex-col items-center justify-end px-4 pb-8">
           <Link
             href="/guides"
