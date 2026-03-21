@@ -1,6 +1,25 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import BackLink from "@/components/BackLink";
 import FrostedPanel from "@/components/FrostedPanel";
+
+export const metadata: Metadata = {
+  title: "Indoor Climbing Guides | Ground Up",
+  description:
+    "Start your indoor climbing progression with practical guides on movement, belay systems, safety habits, and confidence-building foundations.",
+  openGraph: {
+    title: "Indoor Climbing Guides | Ground Up",
+    description:
+      "Structured indoor climbing guides focused on systems, safety, movement, and deliberate progression.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Indoor Climbing Guides | Ground Up",
+    description:
+      "Structured indoor climbing guides focused on systems, safety, movement, and deliberate progression.",
+  },
+};
 
 const guides = [
   {
