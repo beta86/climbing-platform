@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import LinkCard from "@/components/LinkCard";
 import PageLayout from "@/components/PageLayout";
 import PageSection from "@/components/PageSection";
 import { disciplineLabel, gearPageOrder, kits } from "@/data/kits";
+
+export const metadata: Metadata = {
+  title: "Climbing Gear",
+  description:
+    "Beginner climbing gear checklists for indoor, sport, and trad disciplines, with practical kit guidance for getting started.",
+};
 
 const disciplines = gearPageOrder.filter(
   (d): d is keyof typeof kits => d in kits

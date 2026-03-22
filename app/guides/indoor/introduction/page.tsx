@@ -4,18 +4,18 @@ import BackNavLink from "@/components/BackNavLink";
 import FrostedPanel from "@/components/FrostedPanel";
 
 export const metadata: Metadata = {
-  title: "Introduction to Indoor Roped Climbing | Ground Up",
+  title: "Introduction to Indoor Roped Climbing",
   description:
     "Learn the fundamentals of indoor roped climbing: top roping vs lead climbing, belay systems, buddy checks, communication, and safe progression.",
   openGraph: {
-    title: "Introduction to Indoor Roped Climbing | Ground Up",
+    title: "Introduction to Indoor Roped Climbing",
     description:
       "A practical beginner guide to indoor roped climbing, covering systems, safety checks, belay devices, and progression.",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Introduction to Indoor Roped Climbing | Ground Up",
+    title: "Introduction to Indoor Roped Climbing",
     description:
       "A practical beginner guide to indoor roped climbing, covering systems, safety checks, belay devices, and progression.",
   },

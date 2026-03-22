@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import BackNavLink from "@/components/BackNavLink";
 import FrostedPanel from "@/components/FrostedPanel";
+
+export const metadata: Metadata = {
+  title: "Outdoor Sport Climbing Guides",
+  description:
+    "Learn outdoor sport climbing systems step by step, from first days on real rock to safer anchor and route decisions.",
+};
 
 const guides = [
   {

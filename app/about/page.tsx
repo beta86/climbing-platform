@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import PageLayout from "@/components/PageLayout";
 import PageSection from "@/components/PageSection";
 import FrostedPanel from "@/components/FrostedPanel";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Meet Ben and learn the story, philosophy, and mission behind Ground Up climbing progression guides.",
+};
 
 export default function AboutPage() {
   return (

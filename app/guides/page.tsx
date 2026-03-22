@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import LinkCard from "@/components/LinkCard";
 import PageLayout from "@/components/PageLayout";
 import PageSection from "@/components/PageSection";
 import { TrendingUp } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Climbing Guides",
+  description:
+    "Browse structured climbing guides covering indoor foundations, outdoor sport systems, and trad progression.",
+};
 
 export default function GuidesPage() {
   return (

@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import BackNavLink from "@/components/BackNavLink";
 import FrostedPanel from "@/components/FrostedPanel";
+
+export const metadata: Metadata = {
+  title: "Introduction to Outdoor Climbing",
+  description:
+    "A beginner introduction to outdoor climbing covering sport routes, top roping, anchors, communication, and responsible climbing systems.",
+};
 
 export default function OutdoorIntroductionGuidePage() {
   return (

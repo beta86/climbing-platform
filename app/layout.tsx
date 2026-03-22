@@ -14,8 +14,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ground Up",
-  description: "Structured progression for indoor, sport, and trad climbers — built step by step.",
+  metadataBase: new URL("https://groundupclimb.co.uk"),
+  title: {
+    default: "Ground Up",
+    template: "%s | Ground Up",
+  },
+  description:
+    "Structured progression for indoor, sport, and trad climbers — built step by step.",
+  openGraph: {
+    type: "website",
+    url: "https://groundupclimb.co.uk",
+    siteName: "Ground Up",
+    title: "Ground Up",
+    description:
+      "Structured progression for indoor, sport, and trad climbers — built step by step.",
+    locale: "en_GB",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ground Up",
+    description:
+      "Structured progression for indoor, sport, and trad climbers — built step by step.",
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
