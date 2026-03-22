@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guides/outdoor/introduction",
     "/gear",
     "/gear/indoor",
-    "/gear/outdoor",
+    "/gear/sport",
     "/gear/trad",
     "/about",
   ];

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Climbing Progression Guides",
+  title: "Climbing Guides and Gear",
   description:
-    "Structured climbing progression for indoor, outdoor sport, and trad climbers. Build skills, systems, and judgement step by step.",
+    "Structured climbing guides and practical gear pathways for indoor, sport, and trad climbers. Build skills, systems, and judgement step by step.",
 };
 
 export default function Home() {
