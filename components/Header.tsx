@@ -24,11 +24,11 @@ export default function Header() {
             {/* <Link href="/learn" className="hover:text-orange-400 transition">
               Learn
             </Link> */}
-            <Link href="/gear" className="hover:text-orange-400 transition">
-              Gear
-            </Link>
             <Link href="/guides" className="hover:text-orange-400 transition">
               Guides
+            </Link>
+            <Link href="/gear" className="hover:text-orange-400 transition">
+              Gear
             </Link>
             <Link href="/about" className="hover:text-orange-400 transition">
               About
@@ -65,11 +65,11 @@ export default function Header() {
             {/* <Link href="/learn" onClick={() => setIsOpen(false)}>
               Learn
             </Link> */}
-            <Link href="/gear" onClick={() => setIsOpen(false)}>
-              Gear
-            </Link>
             <Link href="/guides" onClick={() => setIsOpen(false)}>
               Guides
+            </Link>
+            <Link href="/gear" onClick={() => setIsOpen(false)}>
+              Gear
             </Link>
             <Link href="/about" onClick={() => setIsOpen(false)}>
               About
