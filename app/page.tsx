@@ -107,6 +107,68 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Gear Section */}
+      <section className="bg-stone-50 py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-semibold text-stone-900 mb-4">
+              Build Your Kit
+            </h2>
+            <p className="text-lg text-stone-700 leading-relaxed max-w-3xl mx-auto">
+              Gear should match your stage. Start with indoor essentials, then
+              add what you need for outdoor sport and trad progression.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-12 text-center">
+            <Link
+              href="/gear/indoor"
+              className="block rounded-lg p-4 hover:bg-white transition-colors"
+            >
+              <h3 className="text-xl font-semibold text-stone-900 mb-4">
+                Indoor Kit
+              </h3>
+              <p className="text-stone-600">
+                Core gear for gym rope climbing and first sessions.
+              </p>
+            </Link>
+
+            <Link
+              href="/gear/sport"
+              className="block rounded-lg p-4 hover:bg-white transition-colors"
+            >
+              <h3 className="text-xl font-semibold text-stone-900 mb-4">
+                Outdoor Sport Kit
+              </h3>
+              <p className="text-stone-600">
+                Add the essentials for your first days climbing on real rock.
+              </p>
+            </Link>
+
+            <Link
+              href="/gear/trad"
+              className="block rounded-lg p-4 hover:bg-white transition-colors"
+            >
+              <h3 className="text-xl font-semibold text-stone-900 mb-4">
+                Trad Kit
+              </h3>
+              <p className="text-stone-600">
+                Expand to a trad rack with progressive, practical additions.
+              </p>
+            </Link>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/gear"
+              className="text-orange-600 font-medium hover:underline"
+            >
+              Explore Gear Pathways →
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
