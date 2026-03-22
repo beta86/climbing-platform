@@ -59,6 +59,17 @@ export default function Home() {
       {/* Pathways Section */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-semibold text-stone-900 mb-4">
+              Build Your Skills
+            </h2>
+            <p className="text-lg text-stone-700 leading-relaxed max-w-3xl mx-auto">
+              Start with indoor foundations, then progress to outdoor sport and
+              trad. These guides are built to develop movement, systems, and
+              judgement step by step.
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-12 text-center">
             <Link
               href="/guides/indoor"
