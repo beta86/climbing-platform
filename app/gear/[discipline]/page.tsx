@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import BackLink from "@/components/BackLink";
 import KitList from "@/components/KitList";
 import PageLayout from "@/components/PageLayout";
 import PageSection from "@/components/PageSection";
@@ -28,7 +28,12 @@ export default async function GearDisciplinePage({ params }: Props) {
     <PageLayout title={title}>
       <PageSection bg="white">
         <KitList type={discipline} showHeading={false} />
-        <BackLink />
+        <Link
+          href="/gear"
+          className="inline-block mt-6 text-base text-stone-600 hover:text-orange-600 transition-colors duration-150"
+        >
+          Back to Climbing Gear
+        </Link>
       </PageSection>
     </PageLayout>
   );

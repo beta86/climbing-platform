@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import BackLink from "@/components/BackLink";
 import FrostedPanel from "@/components/FrostedPanel";
 
 export const metadata: Metadata = {
@@ -284,7 +283,12 @@ export default function IndoorIntroductionGuidePage() {
           </div>
 
           <div className="mt-8">
-            <BackLink>Back to Indoor Foundations</BackLink>
+            <Link
+              href="/guides/indoor"
+              className="inline-block mt-6 text-base text-stone-600 hover:text-orange-600 transition-colors duration-150"
+            >
+              Back to Indoor Foundations
+            </Link>
           </div>
         </article>
       </main>
