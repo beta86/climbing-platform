@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BackNavLink from "@/components/BackNavLink";
 import LinkCard from "@/components/LinkCard";
 import PageLayout from "@/components/PageLayout";
 import PageSection from "@/components/PageSection";
@@ -61,6 +62,7 @@ export default function GuidesPage() {
             description="Gear placement, systems thinking, and judgement under pressure. Building toward trad when you're ready."
           />
         </div>
+        <BackNavLink href="/">Back to Home</BackNavLink>
       </PageSection>
     </PageLayout>
   );

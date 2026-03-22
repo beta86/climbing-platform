@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BackNavLink from "@/components/BackNavLink";
 import LinkCard from "@/components/LinkCard";
 import PageLayout from "@/components/PageLayout";
 import PageSection from "@/components/PageSection";
@@ -19,8 +20,8 @@ export default function GearPage() {
     <PageLayout title="Climbing gear">
       <PageSection bg="white">
         <p className="text-stone-700 leading-relaxed mb-8">
-          Here you can find a list of gear that you ideally want to start each
-          discipline.
+          Use these starter kit lists to build your gear progressively from
+          indoor climbing through outdoor sport and trad.
         </p>
         <ul className="flex flex-col gap-4">
           {disciplines.map((type) => (
@@ -32,6 +33,7 @@ export default function GearPage() {
             </li>
           ))}
         </ul>
+        <BackNavLink href="/">Back to Home</BackNavLink>
       </PageSection>
     </PageLayout>
   );
