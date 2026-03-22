@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BackNavLink from "@/components/BackNavLink";
 import FrostedPanel from "@/components/FrostedPanel";
 
 export default function OutdoorIntroductionGuidePage() {
@@ -217,12 +218,9 @@ export default function OutdoorIntroductionGuidePage() {
           </div>
 
           <div className="mt-8">
-            <Link
-              href="/guides/outdoor"
-              className="inline-block mt-6 text-base text-stone-600 hover:text-orange-600 transition-colors duration-150"
-            >
+            <BackNavLink href="/guides/outdoor">
               Back to Outdoor Sport
-            </Link>
+            </BackNavLink>
           </div>
         </article>
       </main>
