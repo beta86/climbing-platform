@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Climbing Guides and Gear",
+  title: "Build Your Climbing from the Ground Up",
   description:
     "Structured climbing guides and practical gear pathways for indoor, sport, and trad climbers. Build skills, systems, and judgement step by step.",
 };
@@ -12,31 +12,36 @@ export default function Home() {
     <main>
       {/* Hero Section */}
       <section className="relative w-full h-[65vh] min-h-[420px] max-h-[700px] overflow-hidden">
-        <div className="absolute inset-0 min-h-[420px]">
-          <img
-            src="/images/hero-mobile.png"
-            alt="Outdoor sport climber on a steep route"
-            className="absolute inset-0 w-full h-full object-cover object-center md:hidden"
-            fetchPriority="high"
-          />
-          <img
-            src="/images/hero.png"
-            alt="Outdoor sport climber on a steep route"
-            className="absolute inset-0 w-full h-full object-cover object-center hidden md:block"
-            fetchPriority="high"
-          />
-        </div>
+        <img
+          src="/images/hero.jpg"
+          alt="Outdoor sport climber on a steep route"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          fetchPriority="high"
+        />
 
-        <div className="absolute inset-0 bg-stone-950/25 hidden md:block" aria-hidden />
+        <div className="absolute inset-0 bg-linear-to-b from-stone-950/25 via-stone-950/20 to-stone-950/55" aria-hidden />
 
-        {/* Hero Content: button at bottom of image */} 
-        <div className="absolute inset-0 flex flex-col items-center justify-end px-4 pb-8">
-          <Link
-            href="/guides"
-            className="bg-orange-600 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-orange-500 transition"
-          >
-            Start Your Progression
-          </Link>
+        {/* Hero Content */}
+        <div className="absolute inset-0 flex flex-col items-center justify-end px-4 pb-8 sm:px-6 sm:pb-10">
+          <div className="mx-auto w-full max-w-6xl text-center">
+            <div className="mb-10 sm:mb-12 md:mb-14">
+              <h1 className="mx-auto max-w-3xl text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-white">
+                Build Your Climbing from the Ground Up
+              </h1>
+              <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-stone-100 leading-relaxed">
+                Structured progression for indoors, sport and trad climbers -
+                built step by step
+              </p>
+            </div>
+            <div className="mt-6">
+              <Link
+                href="/guides"
+                className="inline-flex bg-orange-600 text-white px-6 py-3 rounded-xl text-base font-medium hover:bg-orange-500 transition"
+              >
+                Start Your Progression
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
