@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type PageLayoutProps = {
   title: string;
   /** When set, shows a hero image with title overlaid; otherwise a simple title band. */
@@ -14,10 +16,12 @@ export default function PageLayout({
     <div className="min-h-screen bg-stone-100">
       {heroImage ? (
         <section className="relative h-[40vh] min-h-[280px] max-h-[420px] w-full overflow-hidden">
-          <img
+          <Image
             src={heroImage.src}
             alt={heroImage.alt}
-            className="absolute inset-0 h-full w-full object-cover object-center"
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
           />
           <div className="absolute left-0 right-0 top-0 flex flex-col items-start pt-12 sm:pt-16">
             <div className="max-w-3xl w-full mx-auto px-5 sm:px-6">

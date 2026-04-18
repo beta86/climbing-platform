@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import LeadCaptureCallout from "@/components/leads/LeadCaptureCallout";
 
 export const metadata: Metadata = {
@@ -13,11 +14,13 @@ export default function Home() {
     <main>
       {/* Hero Section */}
       <section className="relative w-full h-[65vh] min-h-[420px] max-h-[700px] overflow-hidden">
-        <img
+        <Image
           src="/images/hero.jpg"
           alt="Outdoor sport climber on a steep route"
-          className="absolute inset-0 w-full h-full object-cover object-center"
-          fetchPriority="high"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
 
         <div className="absolute inset-0 bg-linear-to-b from-stone-950/25 via-stone-950/20 to-stone-950/55" aria-hidden />

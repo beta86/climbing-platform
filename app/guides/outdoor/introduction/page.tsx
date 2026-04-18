@@ -90,7 +90,7 @@ export default function OutdoorIntroductionGuidePage() {
           <div className="grid gap-8 md:grid-cols-2 py-2">
             <section>
               <h2 className="text-base font-semibold text-stone-900">
-                What you'll learn
+                What you&apos;ll learn
               </h2>
               <ul className="mt-3 space-y-2 text-stone-700 list-disc pl-6">
                 <li>How outdoor climbing differs from gym climbing</li>
@@ -122,7 +122,7 @@ export default function OutdoorIntroductionGuidePage() {
                 bolts or by removable protection placed by the climber.
               </p>
               <p className="mt-4 text-stone-700 leading-relaxed">
-                If you're new to climbing outdoors, you'll most commonly
+                If you&apos;re new to climbing outdoors, you&apos;ll most commonly
                 encounter bolted sport routes, where climbers clip quickdraws
                 into bolts as they climb.
               </p>
@@ -143,7 +143,7 @@ export default function OutdoorIntroductionGuidePage() {
               </p>
               <p className="mt-4 text-stone-700 leading-relaxed">
                 If you plan to lead outdoors, you should already be comfortable
-                with core lead systems. If you're still building those skills,
+                with core lead systems. If you&apos;re still building those skills,
                 start with the{" "}
                 <Link
                   href="/guides/indoor"
@@ -174,7 +174,7 @@ export default function OutdoorIntroductionGuidePage() {
                 at the top of the route.
               </p>
               <p className="mt-4 text-stone-700 leading-relaxed">
-                It's also important to avoid repeatedly running the rope
+                It&apos;s also important to avoid repeatedly running the rope
                 directly through fixed anchor hardware, as this can cause
                 unnecessary wear. Instead, climbers typically set up a top rope
                 using their own equipment.
@@ -190,7 +190,7 @@ export default function OutdoorIntroductionGuidePage() {
                 Anchors and finishing routes
               </h2>
               <p className="mt-4 text-stone-700 leading-relaxed">
-                At the top of many outdoor climbs you'll find an anchor system,
+                At the top of many outdoor climbs you&apos;ll find an anchor system,
                 usually made up of bolts connected with rings or chains.
               </p>
               <p className="mt-4 text-stone-700 leading-relaxed">

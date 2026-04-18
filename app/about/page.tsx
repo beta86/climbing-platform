@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import PageLayout from "@/components/PageLayout";
 import PageSection from "@/components/PageSection";
 import FrostedPanel from "@/components/FrostedPanel";
@@ -60,11 +61,15 @@ export default function AboutPage() {
             </p>
           </div>
           <figure className="md:col-span-2">
-            <img
-              src="/images/about.png"
-              alt="Ben climbing outdoors"
-              className="w-full rounded-xl object-cover aspect-4/5 md:aspect-3/4 shadow-md"
-            />
+            <div className="relative w-full overflow-hidden rounded-xl aspect-4/5 md:aspect-3/4 shadow-md">
+              <Image
+                src="/images/about.png"
+                alt="Ben climbing outdoors"
+                fill
+                sizes="(max-width: 768px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
           </figure>
         </div>
       </PageSection>

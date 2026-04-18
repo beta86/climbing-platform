@@ -49,7 +49,7 @@ export default function GuidesPage() {
               grades.
             </p>
             <p>
-              Whether you're learning to belay confidently, building anchor
+              Whether you&apos;re learning to belay confidently, building anchor
               knowledge, or developing gear placement skills, this library is
               designed to help you progress deliberately and safely.
             </p>
@@ -75,7 +75,7 @@ export default function GuidesPage() {
           <LinkCard
             href="/guides/trad"
             title="Trad climbing"
-            description="Gear placement, systems thinking, and judgement under pressure. Building toward trad when you're ready."
+            description="Gear placement, systems thinking, and judgement under pressure. Building toward trad when you&apos;re ready."
           />
         </div>
         <div className="mt-10">

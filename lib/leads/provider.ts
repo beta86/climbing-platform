@@ -14,6 +14,7 @@ export interface LeadProvider {
 
 class NoopLeadProvider implements LeadProvider {
   async submit(_lead: LeadRecord): Promise<LeadProviderResult> {
+    void _lead;
     return { ok: true };
   }
 }

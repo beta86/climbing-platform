@@ -49,7 +49,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-stone-100 text-stone-900">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} bg-stone-100 text-stone-900`}
+      >
         <Header />
         <main>{children}</main>
       </body>
