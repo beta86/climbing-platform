@@ -7,10 +7,14 @@ export const metadata: Metadata = {
   title: "Indoor Climbing Guides",
   description:
     "Start your indoor climbing progression with practical guides on movement, belay systems, safety habits, and confidence-building foundations.",
+  alternates: {
+    canonical: "/guides/indoor",
+  },
   openGraph: {
     title: "Indoor Climbing Guides",
     description:
       "Structured indoor climbing guides focused on systems, safety, movement, and deliberate progression.",
+    url: "/guides/indoor",
     type: "website",
   },
   twitter: {

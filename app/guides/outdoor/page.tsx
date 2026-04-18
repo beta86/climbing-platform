@@ -7,6 +7,22 @@ export const metadata: Metadata = {
   title: "Outdoor Sport Climbing Guides",
   description:
     "Learn outdoor sport climbing systems step by step, from first days on real rock to safer anchor and route decisions.",
+  alternates: {
+    canonical: "/guides/outdoor",
+  },
+  openGraph: {
+    title: "Outdoor Sport Climbing Guides",
+    description:
+      "Learn outdoor sport climbing systems step by step, from first days on real rock to safer anchor and route decisions.",
+    url: "/guides/outdoor",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Outdoor Sport Climbing Guides",
+    description:
+      "Learn outdoor sport climbing systems step by step, from first days on real rock to safer anchor and route decisions.",
+  },
 };
 
 const guides = [

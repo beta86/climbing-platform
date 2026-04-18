@@ -9,6 +9,22 @@ export const metadata: Metadata = {
   title: "Climbing Gear",
   description:
     "Beginner climbing gear checklists for indoor, sport, and trad disciplines, with practical kit guidance for getting started.",
+  alternates: {
+    canonical: "/gear",
+  },
+  openGraph: {
+    title: "Climbing Gear",
+    description:
+      "Beginner climbing gear checklists for indoor, sport, and trad disciplines, with practical kit guidance for getting started.",
+    url: "/gear",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Climbing Gear",
+    description:
+      "Beginner climbing gear checklists for indoor, sport, and trad disciplines, with practical kit guidance for getting started.",
+  },
 };
 
 const disciplines = gearPageOrder.filter(

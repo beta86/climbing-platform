@@ -109,6 +109,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description: `Essential ${disciplineLabel[discipline].toLowerCase()} climbing kit recommendations for beginners, including the core gear to start safely and confidently.`,
+    alternates: {
+      canonical: `/gear/${discipline}`,
+    },
+    openGraph: {
+      title,
+      description: `Essential ${disciplineLabel[discipline].toLowerCase()} climbing kit recommendations for beginners, including the core gear to start safely and confidently.`,
+      url: `/gear/${discipline}`,
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: `Essential ${disciplineLabel[discipline].toLowerCase()} climbing kit recommendations for beginners, including the core gear to start safely and confidently.`,
+    },
   };
 }
 

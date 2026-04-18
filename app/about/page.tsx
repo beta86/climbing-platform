@@ -8,6 +8,22 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Meet Ben and learn the story, philosophy, and mission behind Ground Up climbing progression guides.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Ground Up",
+    description:
+      "Meet Ben and learn the story, philosophy, and mission behind Ground Up climbing progression guides.",
+    url: "/about",
+    type: "profile",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Ground Up",
+    description:
+      "Meet Ben and learn the story, philosophy, and mission behind Ground Up climbing progression guides.",
+  },
 };
 
 export default function AboutPage() {

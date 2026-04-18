@@ -7,10 +7,14 @@ export const metadata: Metadata = {
   title: "Introduction to Indoor Roped Climbing",
   description:
     "Learn the fundamentals of indoor roped climbing: top roping vs lead climbing, belay systems, buddy checks, communication, and safe progression.",
+  alternates: {
+    canonical: "/guides/indoor/introduction",
+  },
   openGraph: {
     title: "Introduction to Indoor Roped Climbing",
     description:
       "A practical beginner guide to indoor roped climbing, covering systems, safety checks, belay devices, and progression.",
+    url: "/guides/indoor/introduction",
     type: "article",
   },
   twitter: {
@@ -22,8 +26,30 @@ export const metadata: Metadata = {
 };
 
 export default function IndoorIntroductionGuidePage() {
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Introduction to Indoor Roped Climbing",
+    description:
+      "Learn the fundamentals of indoor roped climbing: top roping vs lead climbing, belay systems, buddy checks, communication, and safe progression.",
+    author: {
+      "@type": "Person",
+      name: "Ben",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Ground Up",
+      url: "https://groundupclimb.co.uk",
+    },
+    mainEntityOfPage: "https://groundupclimb.co.uk/guides/indoor/introduction",
+  };
+
   return (
     <div className="min-h-screen bg-stone-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <header
         className="relative overflow-hidden"
         style={{

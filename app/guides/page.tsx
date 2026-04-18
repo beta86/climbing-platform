@@ -9,6 +9,22 @@ export const metadata: Metadata = {
   title: "Climbing Guides",
   description:
     "Browse structured climbing guides covering indoor foundations, outdoor sport systems, and trad progression.",
+  alternates: {
+    canonical: "/guides",
+  },
+  openGraph: {
+    title: "Climbing Guides",
+    description:
+      "Browse structured climbing guides covering indoor foundations, outdoor sport systems, and trad progression.",
+    url: "/guides",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Climbing Guides",
+    description:
+      "Browse structured climbing guides covering indoor foundations, outdoor sport systems, and trad progression.",
+  },
 };
 
 export default function GuidesPage() {

@@ -7,11 +7,49 @@ export const metadata: Metadata = {
   title: "Introduction to Outdoor Climbing",
   description:
     "A beginner introduction to outdoor climbing covering sport routes, top roping, anchors, communication, and responsible climbing systems.",
+  alternates: {
+    canonical: "/guides/outdoor/introduction",
+  },
+  openGraph: {
+    title: "Introduction to Outdoor Climbing",
+    description:
+      "A beginner introduction to outdoor climbing covering sport routes, top roping, anchors, communication, and responsible climbing systems.",
+    url: "/guides/outdoor/introduction",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Introduction to Outdoor Climbing",
+    description:
+      "A beginner introduction to outdoor climbing covering sport routes, top roping, anchors, communication, and responsible climbing systems.",
+  },
 };
 
 export default function OutdoorIntroductionGuidePage() {
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Introduction to Outdoor Climbing",
+    description:
+      "A beginner introduction to outdoor climbing covering sport routes, top roping, anchors, communication, and responsible climbing systems.",
+    author: {
+      "@type": "Person",
+      name: "Ben",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Ground Up",
+      url: "https://groundupclimb.co.uk",
+    },
+    mainEntityOfPage: "https://groundupclimb.co.uk/guides/outdoor/introduction",
+  };
+
   return (
     <div className="min-h-screen bg-stone-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <header
         className="relative overflow-hidden"
         style={{
