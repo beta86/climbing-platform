@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BackNavLink from "@/components/BackNavLink";
+import LeadCaptureCallout from "@/components/leads/LeadCaptureCallout";
 import LinkCard from "@/components/LinkCard";
 import PageLayout from "@/components/PageLayout";
 import PageSection from "@/components/PageSection";
@@ -49,6 +50,12 @@ export default function GearPage() {
             </li>
           ))}
         </ul>
+        <div className="mt-10">
+          <LeadCaptureCallout
+            title="Get gear updates"
+            description="Join updates for new gear lists, beginner progression pathways, and future recommendations."
+          />
+        </div>
         <BackNavLink href="/">Back to Home</BackNavLink>
       </PageSection>
     </PageLayout>

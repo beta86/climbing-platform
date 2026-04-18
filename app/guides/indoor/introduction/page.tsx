@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BackNavLink from "@/components/BackNavLink";
 import FrostedPanel from "@/components/FrostedPanel";
+import LeadCaptureCallout from "@/components/leads/LeadCaptureCallout";
 
 export const metadata: Metadata = {
   title: "Introduction to Indoor Roped Climbing",
@@ -300,6 +301,12 @@ export default function IndoorIntroductionGuidePage() {
             Progress in climbing is built on systems and habits. Start with the
             fundamentals, and build from there.
           </p>
+          <div className="mt-10">
+            <LeadCaptureCallout
+              title="Want the next guides first?"
+              description="Join updates to get notified when new indoor progression guides are published."
+            />
+          </div>
           <div className="mt-8">
             <Link
               href="/guides/indoor"

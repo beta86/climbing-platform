@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import LeadCaptureCallout from "@/components/leads/LeadCaptureCallout";
 
 export const metadata: Metadata = {
   title: "Build Your Climbing from the Ground Up",
@@ -183,6 +184,12 @@ export default function Home() {
               Explore Gear Pathways →
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <LeadCaptureCallout />
         </div>
       </section>
     </main>

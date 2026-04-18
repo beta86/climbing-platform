@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import BackNavLink from "@/components/BackNavLink";
+import LeadCaptureCallout from "@/components/leads/LeadCaptureCallout";
 import LinkCard from "@/components/LinkCard";
 import PageLayout from "@/components/PageLayout";
 import PageSection from "@/components/PageSection";
-import { TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Climbing Guides",
@@ -76,6 +76,12 @@ export default function GuidesPage() {
             href="/guides/trad"
             title="Trad climbing"
             description="Gear placement, systems thinking, and judgement under pressure. Building toward trad when you're ready."
+          />
+        </div>
+        <div className="mt-10">
+          <LeadCaptureCallout
+            title="Follow new guide releases"
+            description="Get updates when new indoor, outdoor sport, and trad guides are published."
           />
         </div>
         <BackNavLink href="/">Back to Home</BackNavLink>

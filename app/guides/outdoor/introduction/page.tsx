@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BackNavLink from "@/components/BackNavLink";
 import FrostedPanel from "@/components/FrostedPanel";
+import LeadCaptureCallout from "@/components/leads/LeadCaptureCallout";
 
 export const metadata: Metadata = {
   title: "Introduction to Outdoor Climbing",
@@ -252,6 +253,12 @@ export default function OutdoorIntroductionGuidePage() {
               </p>
             </div>
           </section>
+          <div className="mt-10">
+            <LeadCaptureCallout
+              title="Follow outdoor guide updates"
+              description="Get notified as new outdoor sport guides are published and pathways expand."
+            />
+          </div>
 
           <div className="mt-8">
             <Link
